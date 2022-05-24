@@ -1,0 +1,206 @@
+:root {
+    --site-background-color: #ffffff;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --selected-text-color: #ffffff;
+    --primary-background-color: #2196F3;
+    --current-text-color: var(--primary-background-color);
+    --secondary-background-color: #F5F4FA;
+    --footer-background-color: #2F303A;
+    --address-text-color: #ffffff;
+    --secondary-address-text-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+    background-color: var(--site-background-color);
+    letter-spacing: 0.03em;
+}
+
+.no-mark {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Header */
+.site-nav, .header-addresses {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.page-header .logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.page-header .logo>span {
+    color: var(--primary-background-color);
+}
+
+.page-header .link {
+    color: var(--primary-text-color);
+}
+
+.header-addresses .link {
+    color: var(--secondary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.header-addresses .link:hover,
+.header-addresses .link:focus {
+    color: var(--primary-background-color);
+}
+
+.site-nav .current {
+    color: var(--current-text-color);
+}
+
+/* Stuido page */
+
+.hero {
+    background-color: var(--footer-background-color);
+    text-align: center;
+}
+
+.hero h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--site-background-color);
+}
+
+.button {
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-background-color);
+}
+
+.hero .button.primary {
+    color: var(--selected-text-color);
+    background-color: var(--primary-background-color);
+}
+
+.main-page h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.pecularities .title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.pecularities .description {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--secondary-text-color);
+}
+
+.occupations {
+    text-align: center;
+}
+
+.team {
+    background-color: var(--secondary-background-color);
+}
+
+.team .card {
+    background-color: var(--site-background-color);
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team .fio {
+    font-weight: 500;
+}
+
+.team .position {
+    color: var(--secondary-text-color);
+}
+
+.portfolio .button:hover,
+.portfolio .button:focus {
+    color: var(--selected-text-color);
+    background-color: var(--primary-background-color);
+}
+
+/* Portfolio section */
+
+.examples .link{
+    color: inherit;
+}
+
+.example h2  {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.example p {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.examples > li:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+
+.page-footer {
+    background-color: var(--footer-background-color);
+}
+
+address {
+    font-style: normal;
+}
+
+address .link {
+    color: var(--address-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.link.secondary {
+    color: var(--secondary-address-text-color);
+}
+address .link:hover,
+address .link:focus,
+address .link.secondary:hover,
+address .link.secondary:focus {
+    color: var(--primary-background-color);
+}
+
+.page-footer .logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--address-text-color);
+}
+
+.page-footer .logo>span {
+    color: var(--primary-background-color);
+}
