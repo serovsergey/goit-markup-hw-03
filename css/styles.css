@@ -11,6 +11,7 @@
   --current-text-color: var(--primary-background-color);
   --line-color: #ececec;
   --card-border-color: #eeeeee;
+  --button-hover-bg-color: #188ce8;
 }
 
 body {
@@ -162,13 +163,19 @@ p {
   cursor: pointer;
 }
 
-.hero .button {
-  padding: 10px 32px;
-}
-
 .button.primary {
   color: var(--selected-text-color);
   background-color: var(--primary-background-color);
+}
+
+.hero .button {
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--button-hover-bg-color);
 }
 
 .section-header {
