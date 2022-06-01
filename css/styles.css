@@ -123,7 +123,8 @@ p {
 }
 
 .occupations img,
-.team img {
+.team img,
+.example img {
   display: block;
 }
 
@@ -295,10 +296,6 @@ p {
   flex-wrap: wrap;
 }
 
-.examples .item {
-  outline: 1px solid var(--card-border-color);
-}
-
 .examples .item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -326,7 +323,9 @@ p {
 }
 
 .example .title {
-  margin: 20px 24px;
+  padding: 20px 24px;
+  border: 1px solid var(--card-border-color);
+  border-top: 0;
 }
 
 .examples > li:hover {
