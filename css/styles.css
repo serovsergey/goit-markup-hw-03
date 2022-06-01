@@ -9,6 +9,7 @@
   --address-text-color: #ffffff;
   --secondary-address-text-color: rgba(255, 255, 255, 0.6);
   --current-text-color: var(--primary-background-color);
+  --line-color: #ececec;
 }
 
 body {
@@ -41,25 +42,45 @@ p {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  width: 1230px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 /* Header */
-.site-nav,
+.page-header {
+  border-bottom: 1px solid var(--line-color);
+}
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-area,
 .header-addresses {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav .link,
+.header-addresses .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-/* .site-nav li:not(:last-child),
-.header-addresses li:not(:last-child) {
-    margin-right: 50px;
-} */
+.site-nav .item:not(:last-child),
+.header-addresses .item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .page-header .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -90,14 +111,9 @@ p {
   color: var(--current-text-color);
 }
 
-/* .page-header > .container {
-    display: flex;
-    justify-content: space-between;
-} */
-
-/* .nav-area {
-    
-} */
+.site-nav {
+  display: flex;
+}
 
 .section {
   padding-top: 94px;
@@ -113,13 +129,13 @@ p {
 }
 
 .hero h1 {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: var(--site-background-color);
-  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .hero.section {
@@ -128,13 +144,19 @@ p {
 }
 
 .button {
-  cursor: pointer;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+  border: 0;
+  border-radius: 4px;
   color: var(--primary-text-color);
   background-color: var(--secondary-background-color);
+  cursor: pointer;
+}
+
+.hero .button {
+  padding: 10px 32px;
 }
 
 .hero .button.primary {
@@ -143,15 +165,24 @@ p {
 }
 
 .main-page h2 {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
 }
 
+/* Features */
 .features {
   padding-top: 89px;
   padding-bottom: 0;
+}
+
+.feature-list {
+  display: flex;
+}
+
+.feature-list .item.item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features .title {
