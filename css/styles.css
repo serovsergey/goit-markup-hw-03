@@ -147,6 +147,7 @@ p {
 .hero.section {
   padding-top: 195px;
   padding-bottom: 0;
+  /* min-width: 1200px; нашел решение сжимающегося фона */
 }
 
 .button {
