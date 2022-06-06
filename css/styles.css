@@ -147,8 +147,10 @@ p {
 }
 
 .hero.section {
-  padding-top: 195px;
+  padding-top: 0;
   padding-bottom: 0;
+  display: flex;
+  align-items: center;
   /* min-width: 1200px; нашел решение сжимающегося фона */
 }
 
@@ -266,6 +268,7 @@ p {
 .team-list .fio {
   margin-top: 30px;
   font-weight: 500;
+  font-size: inherit;
 }
 
 .team-list .position {
@@ -345,9 +348,6 @@ p {
 
 .page-footer {
   background-color: var(--footer-background-color);
-}
-
-.page-footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
